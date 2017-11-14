@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Web.Mvc;
 using System.Web.Routing;
-using System.Web.SessionState;
 
 namespace Solomonic.DependencyInjection.MVC
 {
@@ -14,7 +13,7 @@ namespace Solomonic.DependencyInjection.MVC
             _dependencyContainer = dependencyContainer;
         }
 
-        protected override IController GetControllerInstance(System.Web.Routing.RequestContext requestContext,
+        protected override IController GetControllerInstance(RequestContext requestContext,
             Type controllerType)
         {
             try
